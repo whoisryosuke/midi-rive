@@ -1,10 +1,9 @@
 const config = {
-  title: `Ryoturia`,
-  url: `https://github.com/whoisryosuke/ryoturia-web`,
-  description:
-    "This is a batteries included template for using React Three Fiber (R3F) with NextJS 🔋.",
+  title: `Rive MIDI by Ryo`,
+  url: `https://github.com/whoisryosuke/rive-midi`,
+  description: "Interactive Rive animation that plays MIDI music",
   author: "Ryosuke Hana",
-  keywords: ["3d midi", "3d piano", "r3f midi", "r3f music"],
+  keywords: ["2d midi", "2d piano", "rive midi", "rive music"],
   twitter: "@whoisryosuke",
 };
 

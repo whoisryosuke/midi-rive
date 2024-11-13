@@ -2681,6 +2681,18 @@
     "@react-types/overlays" "^3.8.10"
     "@react-types/shared" "^3.25.0"
 
+"@rive-app/canvas@2.23.5":
+  version "2.23.5"
+  resolved "https://registry.yarnpkg.com/@rive-app/canvas/-/canvas-2.23.5.tgz#54fdf2cfc396bf7ff360f7c0f79053d7c16a12ef"
+  integrity sha512-TrSGfVPbL98XEO1phqLYXT0EkLfaNiGB+dboN190ovWJ1Tw/MkxQH0PTXATdJYiSqaj74cun68VtkP0OoXPwRA==
+
+"@rive-app/react-canvas@^4.16.2":
+  version "4.16.2"
+  resolved "https://registry.yarnpkg.com/@rive-app/react-canvas/-/react-canvas-4.16.2.tgz#de0b901885caf8a999ddbfb2a645e019d40f59d7"
+  integrity sha512-IwA/I0fDlBfBN/ECy51yNN5owbsmQL3LoY+OoZCvjOYZJsAY06Ech02bCR80tO88q866botLUx0ebKsx3o4AqQ==
+  dependencies:
+    "@rive-app/canvas" "2.23.5"
+
 "@rollup/plugin-node-resolve@^7.1.1":
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-node-resolve/-/plugin-node-resolve-7.1.3.tgz#80de384edfbd7bfc9101164910f86078151a3eca"

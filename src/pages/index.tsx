@@ -1,3 +1,5 @@
+import PianoSimple from "@/components/animations/PianoSimple/PianoSimple";
+import PianoSimpleWrapper from "@/components/animations/PianoSimple/PianoSimpleWrapper";
 import Footer from "@/components/dom/Footer";
 import Logo from "@/components/dom/Logo/Logo";
 import Sidebar from "@/components/dom/Sidebar/Sidebar";
@@ -6,30 +8,21 @@ import MusicSwitcher from "@/features/Music/MusicSwitcher";
 import useStore from "@/helpers/store";
 import dynamic from "next/dynamic";
 import { useRouter } from "next/router";
-// import Shader from '@/components/canvas/ShaderExample/ShaderExample'
 
-// Prefer dynamic import for production builds
-// But if you have issues and need to debug in local development
-// comment these out and import above instead
-// https://github.com/pmndrs/react-three-next/issues/49
-const Shader = dynamic(
-  () => import("@/components/canvas/ShaderExample/ShaderExample"),
-  {
-    ssr: false,
-  }
-);
-const PianoScene = dynamic(
-  () => import("@/components/canvas/PianoScene/PianoScene"),
-  {
-    ssr: false,
-  }
-);
+// const PianoSimple = dynamic(
+//   () => import("@/components/animations/PianoSimple/PianoSimple"),
+//   {
+//     ssr: false,
+//   }
+// );
 
 // DOM elements here
 const DOM = () => {
   return (
     <>
-      <Logo />
+      <PianoSimpleWrapper scale={3}>
+        <PianoSimple />
+      </PianoSimpleWrapper>
       <Sidebar />
       <MusicSwitcher />
       <Footer />
@@ -46,11 +39,7 @@ const R3F = () => {
     router.push("/two");
   };
 
-  return (
-    <>
-      <PianoScene />
-    </>
-  );
+  return <></>;
 };
 
 export default function Page() {
