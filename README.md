@@ -1,3 +1,6 @@
+![Screenshot of the piano running in the browser](./docs/screenshot-web.png)
+![Screenshot of the piano in Rive with individual elements visible like events](./docs/screenshot-rive.png)
+
 # MIDI Rive
 
 Interactive Rive animation that plays MIDI music.
